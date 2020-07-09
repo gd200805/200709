@@ -1,41 +1,31 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-<title>无标题文档</title>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="IE=edge" >
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
+<title>Aliplayer Online Settings</title>
+<link rel="stylesheet" href="https://g.alicdn.com/de/prismplayer/2.8.8/skins/default/aliplayer-min.css" />
+<script type="text/javascript" charset="utf-8" src="https://g.alicdn.com/de/prismplayer/2.8.8/aliplayer-min.js"></script>
 </head>
-
 <body>
-&lt;!DOCTYPE html&gt;<br />
-&lt;html&gt;<br />
-&lt;head&gt;<br />
-&lt;meta charset=&quot;utf-8&quot;&gt;<br />
-&lt;meta http-equiv=&quot;x-ua-compatible&quot; content=&quot;IE=edge&quot; &gt;<br />
-&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no&quot;/&gt;<br />
-&lt;title&gt;Aliplayer Online Settings&lt;/title&gt;<br />
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://g.alicdn.com/de/prismplayer/2.8.8/skins/default/aliplayer-min.css&quot; /&gt;<br />
-&lt;script type=&quot;text/javascript&quot; charset=&quot;utf-8&quot; src=&quot;https://g.alicdn.com/de/prismplayer/2.8.8/aliplayer-min.js&quot;&gt;&lt;/script&gt;<br />
-&lt;/head&gt;<br />
-&lt;body&gt;<br />
-&lt;div class=&quot;prism-player&quot; id=&quot;player-con&quot;&gt;&lt;/div&gt;<br />
-&lt;script&gt;<br />
-var player = new Aliplayer({<br />
-&quot;id&quot;: &quot;player-con&quot;,<br />
-&quot;source&quot;: &quot;https://cdn.jsdelivr.net/gh/hls200709/200709/xd.m3u8&quot;,<br />
-&quot;width&quot;: &quot;100%&quot;,<br />
-&quot;height&quot;: &quot;500px&quot;,<br />
-&quot;autoplay&quot;: true,<br />
-&quot;isLive&quot;: false,<br />
-&quot;rePlay&quot;: false,<br />
-&quot;playsinline&quot;: true,<br />
-&quot;preload&quot;: true,<br />
-&quot;controlBarVisibility&quot;: &quot;hover&quot;,<br />
-&quot;useH5Prism&quot;: true<br />
-}, function (player) {<br />
-console.log(&quot;The player is created&quot;);<br />
-}<br />
-);<br />
-&lt;/script&gt;<br />
-&lt;/body&gt;
-</body>
-</html>
+<div class="prism-player" id="player-con"></div>
+<script>
+var player = new Aliplayer({
+"id": "player-con",
+"source": "https://cdn.jsdelivr.net/gh/hls200709/200709/xd.m3u8",
+"width": "100%",
+"height": "500px",
+"autoplay": true,
+"isLive": false,
+"rePlay": false,
+"playsinline": true,
+"preload": true,
+"controlBarVisibility": "hover",
+"useH5Prism": true
+}, function (player) {
+console.log("The player is created");
+}
+);
+</script>
+</body> 
